@@ -70,9 +70,6 @@ export default {
    methods: {
      
    },
-   template:'
-   
-   '
    components: { monthCalendar }
 
 };
