@@ -42,7 +42,7 @@
 
     </main>
     <v-footer class="indigo darken-2">
-      <span class="white--text">Metalsa 2017</span>
+      <span class="white--text"></span>
     </v-footer>
  </v-app>
 
