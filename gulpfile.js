@@ -17,5 +17,11 @@ elixir(function(mix) {
     	'css/fonts.css',
       'css/vuetify.min.css'
     ], 'public/css/app.css', 'resources/assets');
-    mix.browserify('main.js', 'public/js/main.js');
+    mix.browserify(['components/calendar/controlMonth.js',
+                    'components/calendar/EventListElement.js',
+                    'components/calendar/dayBox.js',
+                    'components/calendar/monthCalendar.js',
+                    'components/calendar/embebedListEvent.js',
+                    'components/calendar/menuEditEventFloating.js'
+                   ], 'public/js/main.js');
 });

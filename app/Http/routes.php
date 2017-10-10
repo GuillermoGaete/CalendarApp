@@ -15,7 +15,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/calendar','EventsController@index');
+Route::get('/calendar','EventsController@getDisplayedEvents');
+Route::get('/events/{offsetMonth}','EventsController@getOffsetEvents');
 /*
 |--------------------------------------------------------------------------
 | Application Routes
